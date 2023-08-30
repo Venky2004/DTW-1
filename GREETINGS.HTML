@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://wallpapercave.com/wp/wp2047129.jpg);
+            background-size: cover;
+        }
+
+        .logo {
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .nav {
+            width: 85%;
+            margin: auto;
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .nav ul li::after {
+            content: '';
+            height: 3px;
+            width: 0%;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+        .nav ul li:hover::after {
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="nav">
+            <img src="https://th.bing.com/th/id/R.f5aaaf1fc1c4074661cc61b8d2c1cc3f?rik=S%2f%2fj8%2fIlr8zg9w&riu=http%3a%2f%2fwww.bookmycolleges.com%2fadmin%2fcollegeImages%2f1111%2fmedium%2fcollegeImage_1111_1489500663.png&ehk=wUfFtrj%2fUgC%2fEdO6rVml6Kjh179%2bafnaxisy6uAuaAk%3d&risl=&pid=ImgRaw&r=0"
+                class="logo">
+            <h2 style="color: white; position: absolute;left: 17%;">KLUniversity</h2>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/PROJECT/team.html">ABOUT US</a></li>
+                <li><a href="123.pdf">GLANCE</a></li>
+                <li><a href="dtw main project.pdf">REPORT</a>
+                </li>
+                <li><a href="http://127.0.0.1:5500/PROJECT/links.html">FUSION 360 LINKS</a></li>
+
+                <li><a href="http://127.0.0.1:5500/PROJECT/LOGIN.HTML">Log out</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 style="color: white; font-size: 130px; position:absolute; top: 30%;">
+                PORTABLE LIQUID HEATER
+            </h1>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
