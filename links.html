@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+
+        }
+
+        body {
+            background: url(https://image.freepik.com/free-vector/innovative-background_23-2148458535.jpg);
+            background-size: cover;
+
+        }
+
+        h1{
+            position: absolute;
+            top: 30px;
+            color: aliceblue;
+        }
+
+        ul{
+            display: grid;
+            grid-template-columns: repeat(3,250px);
+            gap: 4rem;
+            margin: 6rem;
+        }
+        
+        body{
+            display: grid;
+            place-items: center;
+        }
+        ul li {
+            transition: ease-in-out 1000ms;
+        }
+         
+        ul li:hover
+        {
+            scale:1.2;
+        }
+
+        ul li img{
+            width: 250px;
+            height: 250px;
+            border-radius: 2rem;
+        }
+        ul li:nth-child(4){
+            margin-left: 8rem;
+        }
+        ul li:nth-child(5){
+            margin-left: 8rem;
+        }
+
+        button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            --hover-shadows: 16px 16px 33px #121212,
+                            -16px -16px 33px #303030;
+            --accent: fuchsia;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            border: none;
+            border-radius: 1.1em;
+            background-color: #212121;
+            color: white;
+            padding: 1em 2em;
+            transition: box-shadow ease-in-out 0.3s,
+                        background-color ease-in-out 0.1s,
+                        letter-spacing ease-in-out 0.1s,
+                        transform ease-in-out 0.1s;
+            box-shadow: 13px 13px 10px #1c1c1c,
+                        -13px -13px 10px #262626;
+}
+
+button:hover {
+ box-shadow: var(--hover-shadows);
+}
+
+button:active {
+ box-shadow: var(--hover-shadows),
+              var(--accent) 0px 0px 30px 5px;
+ background-color: var(--accent);
+ transform: scale(0.95);
+}
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Click On the Images to See the 3D Model of the pic</h1>
+    <ul>
+        <li><a href="https://a360.co/2Z9xKTG" target="blank_"><img src="images/5.png" alt=""></a></li>
+
+        <li><a href="https://a360.co/3aSJ0Xd" target="blank_"><img src="images/3.png" alt=""></a></li>
+
+        <li><a href="https://a360.co/3s6necq" target="blank_"><img src="images/1.png" alt=""></a></li>
+
+        <li><a href="https://a360.co/3dRt60Y" target="blank_"><img src="images/4.png" alt=""></a></li>
+        
+        <li><a href="https://a360.co/3ymPclo" target="blank_"><img src="images/2.png" alt=""></a></li>
+
+    </ul>
+
+   <a href="http://127.0.0.1:5500/greetings.html"><button>Back</button></a>
+</body>
+
+</html>
